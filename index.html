@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Diamond Collector</title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>  
+</head>
+
+
+<body $(document).ready(function()>
+
+<div class="jumbotron-fluid">
+    <div class="container">
+    <div class="col-lg-6 intro">
+        <h1>Diamond Collector!</h1>
+    </div>
+    </div>
+</div> 
+
+
+<div class="row">
+    <div class="col-lg-6 intro">
+        <p>You will be given a random number at the start of the game.</p>
+        <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+        <p>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p>
+        <p>The value of each crystal is hidden from you until you click on it.</p>
+        <p>Each time when the game starts, the game will change the values of each crystal.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-6 randomNum">Computer's Random Number</div>
+        <div class="col-lg-1"></div>
+
+    <div class="diamonds">
+        <div class="container">
+            <img id="first" src="assets/javascript/gem-11.jpg" height="10%" width="10%"/>
+            <img id="second" src="assets/javascript/diamond-2.jpg" height="10%" width="10%"/>
+            <img id="third" src="assets/javascript/diamond-4.jpg" height="10%" width="10%"/>
+            <img id="forth" src="assets/javascript/diamond-5.jpg" height="10%" width="10%"/>
+        </div>
+    </div>
+
+</div>
+
+    <div class="yourPoints">
+        <h1>Your Total Points:
+            <span id="finalPoints"></span>
+        </h1>  
+
+    <div class="winsNdLosses">
+        <h2>Wins:
+            <span id="numberWins"></span>
+        </h2>
+    </div>
+
+
+    <div class="losses">
+        <h3>Losses:
+            <span id="numberLosses"></span>
+        </h3>
+    </div>
+
+    </div>
+
+
+ 
+
+
+<script src="./assets/javascript/game.js"></script>
+</body>
+</html>
